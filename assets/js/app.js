@@ -131,38 +131,6 @@ $(function () {
 
 
 	/* ---------------------------------------------------------
-	 *	Twitter
-	 */
-
-	twitterFetcher.fetch({
-	  "id": '510153363661410304',
-	  "domId": '',
-	  "maxTweets": 3,
-	  "enableLinks": true,
-	  "showInteraction": false,
-	  "showUser": false,
-	  "customCallback": function handleTweets(tweets){
-			var x = tweets.length,
-				n = 0,
-				tweetsHtml = '<ul class="twitterFeed">';
-
-			while(n < x) {
-				tweetsHtml += '<li>' + tweets[n] + '</li>';
-				n++;
-			}
-
-			tweetsHtml += '</ul>';
-			$('#twitterFeed').html(tweetsHtml);
-
-			$(".twitterFeed").bxSlider({
-				nextText: "",
-				prevText: ""
-			});
-		}
-	});
-
-
-	/* ---------------------------------------------------------
 	 *	Portfolio
 	 */
 
